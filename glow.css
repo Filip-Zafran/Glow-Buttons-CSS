@@ -6,15 +6,12 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #1b141a;
-
 }
-
 
 ul {
     margin: 0;
     padding: 0%;
     display: flex;
-
 }
 
 ul li {
@@ -26,12 +23,10 @@ ul li {
     border-radius: 50%;
     box-sizing: border-box;
     background: #fff;
-
 }
 
 ul li:before,
 ul li:after {
-
     content: '';
     position: absolute;
     top: 0;
@@ -40,13 +35,14 @@ ul li:after {
     height: 100%;
     background: #000;
     border-radius: 50%;
-    filter: blue(20px);
+    filter: blur(20px);
     opacity: 0;
     transition: 1s;
+    z-index: -1;
 }
 
 ul li:after {
-    filter: blue(40px);
+    filter: blur(40px);
 }
 
 ul li:hover:before,
@@ -73,4 +69,33 @@ ul li a .fa {
     transition: 0.5s;
     transform: rotateY(0deg) scale(0.8);
     opacity: 0.2;
+}
+
+ul li a:hover .fa {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1) a,
+ul li:nth-child(1):before,
+ul li:nth-child(1):after {
+    background: linear-gradient(45deg, #ff0057, #e64a19);
+}
+
+ul li:nth-child(2) a,
+ul li:nth-child(2):before,
+ul li:nth-child(2):after {
+    background: linear-gradient(45deg, #89ff00, #00bcd4);
+}
+
+ul li:nth-child(3) a,
+ul li:nth-child(3):before,
+ul li:nth-child(3):after {
+    background: linear-gradient(45deg, #e91e63, #5d02ff);
+}
+
+ul li:nth-child(4) a,
+ul li:nth-child(4):before,
+ul li:nth-child(4):after {
+    background: linear-gradient(45deg, #ff0000, #ffc107);
 }
