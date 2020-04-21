@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #1b141a; */
+}
+
+
+ul {
+    margin: 0;
+    padding: 0%;
+    display: flex;
+
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+
+
+}
