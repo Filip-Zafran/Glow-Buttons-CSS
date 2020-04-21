@@ -22,7 +22,6 @@ ul li {
     margin: 0 10px;
     border-radius: 50%;
     box-sizing: border-box;
-    background: #fff;
 }
 
 ul li:before,
@@ -40,6 +39,7 @@ ul li:after {
     transition: 1s;
     z-index: -1;
 }
+
 
 ul li:after {
     filter: blur(40px);
